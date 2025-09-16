@@ -1,0 +1,39 @@
+sources:
+  - name: landing
+    description: The primary soruce system for order management system(OMS) data anlalytics.  
+    database: POC
+    schema: STG_DZ
+    tables:
+      - name: STG
+        description: stg table       
+        identifier: STG_DZ_SALES_NATIONAL_MTH
+      # - name: ordr
+      #   description: The orders table from order management system(OMS).      
+      #   identifier: orders
+      # - name: ordritms
+      #   description: The orderitems table from order management system(OMS).      
+      #   identifier: orderitems
+  #     - name: employees
+  #       description: The employees table from order management system(OMS).      
+  #       identifier: employees
+  #       columns:
+  #         - name: address
+  #           description: Full Address of emplyees for Transport Arrangements.          
+  #           tests:
+  #             - not_null
+  #             - string_not_empty
+  #     - name: sales_us
+  #     - name: sales_europe
+  #     - name: sales_asia
+  #     - name: stores
+  #     - name: suppliers
+  #     - name: products
+
+  # - name: training
+  #   database: SLEEKMART_OMS
+  #   schema: TRAINING
+  #   tables:
+  #     - name: city_temperature
+  #     - name: sales_us
+  #     - name: sales_uk
+  #     - name: sales_india
