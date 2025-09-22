@@ -36,9 +36,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  POC:
-    # Applies to all files under models/example/
-    STG_DZ:
-      +schema: STG_DZ
-    example:
-      +materialized: table
+  my_new_project:              # <-- replace with your project name                   # <-- folder name
+      PSA_DZ:                  # <-- model name (file PSA_DZ.sql)
+        +schema: PSA_DZ
+        +alias: PSA_DZ_SALES_NATIONAL_MTH_TRANSP
+      VW_STG_DZ:
+        +schema: STG_DZ
+        +alias: VW_STG_DZ_SALES_NATIONAL_MTH
+

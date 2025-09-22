@@ -1,7 +1,5 @@
 {{ config(
-    materialized='view',
-    schema='STG_DZ',
-    alias='VW_STG_DZ_SALES_NATIONAL_MTH'
+    materialized='view'
 ) }}
 SELECT TRIM(ATC1) AS ATC1
 ,TRIM(ATC2) AS ATC2
