@@ -1,7 +1,5 @@
 {{ config(
-    materialized='view',
-    schema='PSA_DZ',
-    alias='VW_PSA_DZZ_SALES_NATIONAL_MTH_TRANSP'
+    materialized='view'
 ) }}
 
 {% set unpivot_cols %}
@@ -86,3 +84,9 @@ GROUP BY
     MONO_COMBI, PACK, DOSAGE, LAUNCH_DATE, RX,
     PERIOD
 HAVING COALESCE(SUM("'LC'"),0) + COALESCE(SUM("'UNITS'"),0) != 0
+
+
+
+
+
+
