@@ -2,7 +2,7 @@
   config(
     materialized='incremental',
     unique_key='PROCESS_ID',
-    incremental_strategy='merge',
+    incremental_strategy='delete+insert',
     pre_hook=[
       "UPDATE {{this}} SET LATEST_FLAG = 0"
     ]
@@ -13,7 +13,3 @@
      ref('VW_PSA_DZ'),
      this
 ) }}
-
-
-    -- schema='PSA_DZ',
-    -- alias='PSA_DZ_SALES_NATIONAL_MTH_TRANSP',

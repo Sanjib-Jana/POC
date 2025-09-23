@@ -1,7 +1,5 @@
 {{ config(
-    materialized='view',
-    schema='PSA_DZ',
-    alias='VW_PSA_DZ_SALES_NATIONAL_MTH_TRANSP'
+    materialized='view'
 ) }}
 
 {% set unpivot_cols %}

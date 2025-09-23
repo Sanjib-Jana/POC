@@ -43,4 +43,7 @@ models:
       VW_STG_DZ:
         +schema: STG_DZ
         +alias: VW_STG_DZ_SALES_NATIONAL_MTH
+      VW_PSA_DZ:
+        +schema: PSA_DZ
+        +alias: VW_PSA_DZ_SALES_NATIONAL_MTH_TRANSP
 
